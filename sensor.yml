@@ -1,0 +1,28 @@
+Mainboard:
+  - Name: ""
+  - Temperatures: 0.0 # Average
+  - Fans:
+      - "Fan #2": 0
+      - "Fan #3": 0
+CPU:
+  - Name: ""
+  - Temperatures: 0.0 # Package
+  - Load:
+      - Total: 0.0
+Memory:
+  - Load: 0.0
+GPU:
+  - Name: ""
+  - Temperatures: 0.0
+  - Load:
+      - GPU Core: 0.0
+      - GPU Memory: 0.0
+  - Fans: 0
+Disk0:
+  - Name: ""
+  - Temperatures: 0.0
+  - Load: 0.0
+Disk1:
+  - Name: ""
+  - Temperatures: 0.0
+  - Load: 0.0
