@@ -24,7 +24,7 @@ func main() {
 		} else {
 			var ohmdata utils.OhmData
 			if err := json.Unmarshal(body, &ohmdata); err == nil {
-				utils.SaveSensor(ohmdata)
+				utils.SaveData(ohmdata)
 			} else {
 				fmt.Printf("Error while fetching data :\n")
 				fmt.Printf("\t%c[0;31m%s%c[0m\n", 0x1B, err, 0x1B)

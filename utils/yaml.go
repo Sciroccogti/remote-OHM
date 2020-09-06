@@ -6,8 +6,12 @@ type Conf struct {
 	Port string `yaml:"port"`
 }
 
-// Sensor : a struct for sensor.yml
-type Sensor struct {
+// Data : a struct for sensor.yml
+type Data struct {
+	Computer struct {
+		Name string `yaml:"Name"`
+	} `yaml:"Computer"`
+
 	Mainboard struct {
 		Name        string  `yaml:"Name"`
 		Tempratures float32 `yaml:"Temperatures"` // Average
@@ -19,7 +23,7 @@ type Sensor struct {
 
 	CPU struct {
 		Name        string  `yaml:"Name"`
-		Tempratures float32 `yaml:"Temperatures"` // Packages
+		Tempratures float32 `yaml:"Temperatures"` // Average
 		Load        struct {
 			Total float32 `yaml:"Total"`
 		}
@@ -39,13 +43,15 @@ type Sensor struct {
 		Fans int `yaml:"Fans"`
 	} `yaml:"GPU"`
 
-	Disk0 Disk `yaml:"Disk0"`
-	Disk1 Disk `yaml:"Disk1"`
+	Disks struct {
+		Disk0 Disk `yaml:"Disk0"`
+		Disk1 Disk `yaml:"Disk1"`
+	}
 }
 
 // Disk : a struct for a disk's sensors
 type Disk struct {
 	Name        string  `yaml:"Name"`
 	Tempratures float32 `yaml:"Temperatures"` // Packages
-	Load        float32 `yaml:"Total"`
+	Load        float32 `yaml:"Used Space"`
 }
