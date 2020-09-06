@@ -1,0 +1,31 @@
+Computer:
+  Name: DESKTOP-K7NF6K6
+Mainboard:
+  Name: MSI B450M MORTAR MAX (MS-7B89)
+  Temperatures: 42.875
+  fans:
+    'Fan #2': 1147
+    'Fan #3': 1275
+CPU:
+  Name: AMD Ryzen 7 3700X
+  Temperatures: 47.55
+  load:
+    Total: 0.7
+Memory:
+  Load: 66.8
+GPU:
+  Name: NVIDIA GeForce RTX 2070 SUPER
+  Temperatures: 43
+  load:
+    GPU Core: 7
+    GPU Memory: 10.5
+  Fans: 0
+disks:
+  Disk0:
+    Name: ST2000DM008-2FR102
+    Temperatures: 39
+    Used Space: 18.8
+  Disk1:
+    Name: Generic Hard Disk
+    Temperatures: 0
+    Used Space: 43.5

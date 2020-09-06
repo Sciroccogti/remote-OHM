@@ -38,7 +38,7 @@ func ReadConf() (conf *Conf) {
 // SetDefault : Set default value of the conf
 func SetDefault(conf *Conf) {
 	if conf.IP == "" {
-		conf.IP = "192.168.137.1"
+		conf.IP = "192.168.1.100"
 	}
 
 	if conf.Port == "" {
