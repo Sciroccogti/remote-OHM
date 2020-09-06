@@ -33,16 +33,16 @@ You should check your firewall.
 
 ## How to build
 
-Building for linux_arm on Windows_amd64:
+Building for linux_armv6 on Windows_amd64:
 ```PowerShell
 $env:CGO_ENABLED = 0
 $env:GOOS = "linux"
 $env:GOARCH = "arm"
 $env:GOARM = 6
-go build -o remote-OHM_0.1_linux_armv6 .\remote-OHM.go
+go build -o .\remote-OHM_0.1_linux_armv6 .\remote-OHM.go
 ```
 
-Building for linux_arm on Windows_amd64:
+Building for Windows_amd64 on Windows_amd64:
 ```PowerShell
 $env:CGO_ENABLED = 0
 $env:GOOS = "windows"
